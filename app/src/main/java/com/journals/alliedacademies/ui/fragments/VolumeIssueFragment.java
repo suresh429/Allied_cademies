@@ -99,7 +99,7 @@ public class VolumeIssueFragment extends Fragment {
 
 
             if (homeResponse.isStatus()) {
-                List<VolumeIssueResponse.VolIssueDetailsBean> volIssueDetailsBeanList = homeResponse.getVol_issue_details();
+                List<VolumeIssueResponse.VolIssueDetailsBean> volIssueDetailsBeanList = homeResponse.getVolIssueDetails();
 
                 volIssueDetailsBeanArrayList.addAll(volIssueDetailsBeanList);
 

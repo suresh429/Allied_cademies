@@ -80,7 +80,7 @@ public class ContactFragment extends Fragment implements View.OnClickListener {
 
         // get home data
         journalListViewModel.getJournalListRepository().observe(getViewLifecycleOwner(), homeResponse -> {
-            List<JournalsListResponse.JournalDetailsBean> journalDetailsBeanList = homeResponse.getJournal_details();
+            List<JournalsListResponse.JournalDetailsBean> journalDetailsBeanList = homeResponse.getJournalDetails();
 
             journalDetailsBeanArrayList.addAll(journalDetailsBeanList);
             if (homeResponse.isStatus()) {

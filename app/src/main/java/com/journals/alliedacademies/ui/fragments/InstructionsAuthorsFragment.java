@@ -86,7 +86,7 @@ public class InstructionsAuthorsFragment extends Fragment {
            // List<JournalHomeResponse> catDetailsBeanList = homeResponse.getAbt_journal_details();
 
             if (homeResponse.isStatus()){
-                fragmentInstructionsAuthorsBinding.txtJournalHome.setText(Html.fromHtml(homeResponse.getInst_author_details()));
+                fragmentInstructionsAuthorsBinding.txtJournalHome.setText(Html.fromHtml(homeResponse.getInstAuthorDetails()));
                 fragmentInstructionsAuthorsBinding.txtJournalHome.setMovementMethod(LinkMovementMethod.getInstance());
                 fragmentInstructionsAuthorsBinding.txtEmptyView.setVisibility(View.GONE);
 

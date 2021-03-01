@@ -86,7 +86,7 @@ public class CategoryFragment extends Fragment {
 
 
             if (homeResponse != null){
-                List<CategoryResponse.SubcatDetailsBean> catDetailsBeanList = homeResponse.getSubcat_details();
+                List<CategoryResponse.SubcatDetailsBean> catDetailsBeanList = homeResponse.getSubcatDetails();
 
                 subcatDetailsBeanArrayList.addAll(catDetailsBeanList);
 

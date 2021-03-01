@@ -1,12 +1,16 @@
 package com.journals.alliedacademies.model;
 
+import com.google.gson.annotations.SerializedName;
+
 public class InstructionforAuthorsResponse {
 
 
-
+    @SerializedName("status")
     private boolean status;
-    private int abt_journal;
-    private String inst_author_details;
+    @SerializedName("abt_journal")
+    private int abtJournal;
+    @SerializedName("inst_author_details")
+    private String instAuthorDetails;
 
     public boolean isStatus() {
         return status;
@@ -16,19 +20,19 @@ public class InstructionforAuthorsResponse {
         this.status = status;
     }
 
-    public int getAbt_journal() {
-        return abt_journal;
+    public int getAbtJournal() {
+        return abtJournal;
     }
 
-    public void setAbt_journal(int abt_journal) {
-        this.abt_journal = abt_journal;
+    public void setAbtJournal(int abtJournal) {
+        this.abtJournal = abtJournal;
     }
 
-    public String getInst_author_details() {
-        return inst_author_details;
+    public String getInstAuthorDetails() {
+        return instAuthorDetails;
     }
 
-    public void setInst_author_details(String inst_author_details) {
-        this.inst_author_details = inst_author_details;
+    public void setInstAuthorDetails(String instAuthorDetails) {
+        this.instAuthorDetails = instAuthorDetails;
     }
 }

@@ -93,7 +93,7 @@ public class InPressFragment extends Fragment {
 
 
             if (homeResponse.isStatus()) {
-                List<InPressResponse.InpressDetailsBean> inpressDetailsBeanList = homeResponse.getInpress_details();
+                List<InPressResponse.InpressDetailsBean> inpressDetailsBeanList = homeResponse.getInpressDetails();
 
                 inpressDetailsBeanArrayList.addAll(inpressDetailsBeanList);
 

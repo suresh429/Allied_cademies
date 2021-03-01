@@ -27,10 +27,10 @@ import java.util.List;
 
 public class EditorialBoardAdapter extends RecyclerView.Adapter<EditorialBoardAdapter.ViewHolder> {
 
-    List<EditorialBoardResponse.EditorialboardarrBean> modelList;
+    List<EditorialBoardResponse.EditorialboardarrBean.EditorsBean> modelList;
     Context context;
 
-    public EditorialBoardAdapter(List<EditorialBoardResponse.EditorialboardarrBean> modelList, Context context) {
+    public EditorialBoardAdapter(List<EditorialBoardResponse.EditorialboardarrBean.EditorsBean> modelList, Context context) {
         this.modelList = modelList;
         this.context = context;
     }
@@ -46,16 +46,16 @@ public class EditorialBoardAdapter extends RecyclerView.Adapter<EditorialBoardAd
     public void onBindViewHolder(@NonNull EditorialBoardAdapter.ViewHolder holder, int position) {
 
 
-        holder.rowItemBinding.txtName.setText(modelList.get(position).getEname() + " " + modelList.get(position).getE_qlf());
+        holder.rowItemBinding.txtName.setText(modelList.get(position).getEname() );
 
-        if (modelList.get(position).getEditor_type() != null && !modelList.get(position).getEditor_type().equalsIgnoreCase("null") && !modelList.get(position).getEditor_type().isEmpty()) {
-            holder.rowItemBinding.txtView1.setText(modelList.get(position).getEditor_type());
+        if (modelList.get(position).getEditorDescription() != null && !modelList.get(position).getEditorDescription().equalsIgnoreCase("null") && !modelList.get(position).getEditorDescription().isEmpty()) {
+            holder.rowItemBinding.txtView1.setText(modelList.get(position).getEditorDescription());
         } else {
             holder.rowItemBinding.txtView1.setVisibility(View.GONE);
         }
 
 
-        if (modelList.get(position).getEditor_desig() != null && !modelList.get(position).getEditor_desig().equalsIgnoreCase("null") && !modelList.get(position).getEditor_desig().isEmpty()
+       /* if (modelList.get(position).getEditor_desig() != null && !modelList.get(position).getEditor_desig().equalsIgnoreCase("null") && !modelList.get(position).getEditor_desig().isEmpty()
                 || modelList.get(position).getEditor_dept() != null && !modelList.get(position).getEditor_dept().equalsIgnoreCase("null") && !modelList.get(position).getEditor_dept().isEmpty()) {
 
             if (modelList.get(position).getEditor_desig() != null && !modelList.get(position).getEditor_desig().equalsIgnoreCase("null") && !modelList.get(position).getEditor_desig().isEmpty()) {
@@ -144,7 +144,7 @@ public class EditorialBoardAdapter extends RecyclerView.Adapter<EditorialBoardAd
                 Navigation.findNavController(v).navigate(R.id.biographyResearchFragment, bundle);
 
             }
-        });
+        });*/
     }
 
     @Override

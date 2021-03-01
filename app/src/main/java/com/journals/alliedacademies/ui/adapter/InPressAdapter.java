@@ -41,10 +41,10 @@ public class InPressAdapter extends RecyclerView.Adapter<InPressAdapter.ViewHold
     @Override
     public void onBindViewHolder(@NonNull InPressAdapter.ViewHolder holder, int position) {
 
-        holder.rowItemBinding.txtIssueType.setText(modelList.get(position).getArt_type());
+        holder.rowItemBinding.txtIssueType.setText(modelList.get(position).getArtType());
         holder.rowItemBinding.txtIssueTitle.setText(modelList.get(position).getTitle());
-        holder.rowItemBinding.txtIssueAuthor.setText(Html.fromHtml(modelList.get(position).getAuthor_names()));
-        holder.rowItemBinding.txtIssueDOI.setText("DOI : " + modelList.get(position).getDoi_num());
+        holder.rowItemBinding.txtIssueAuthor.setText(Html.fromHtml(modelList.get(position).getAuthorNames()));
+        holder.rowItemBinding.txtIssueDOI.setText("DOI : " + modelList.get(position).getDoiNum());
 
         if (modelList.get(position).getAbstractlink() != null && !modelList.get(position).getAbstractlink().equalsIgnoreCase("null") && !modelList.get(position).getAbstractlink().isEmpty() ) {
             holder.rowItemBinding.txtAbstract.setVisibility(View.VISIBLE);

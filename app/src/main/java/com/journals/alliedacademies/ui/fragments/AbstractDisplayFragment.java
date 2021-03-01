@@ -86,12 +86,12 @@ public class AbstractDisplayFragment extends Fragment {
            // List<JournalHomeResponse> catDetailsBeanList = homeResponse.getAbt_journal_details();
 
             if (homeResponse.isStatus()){
-                fragmentAbstractDisplayBinding.txtAbstractContent.setText(Html.fromHtml(homeResponse.getAbstract_details().get(0).getAbstractX()));
+                fragmentAbstractDisplayBinding.txtAbstractContent.setText(Html.fromHtml(homeResponse.getAbstractDetails().get(0).getAbstractX()));
                 fragmentAbstractDisplayBinding.txtAbstractContent.setMovementMethod(LinkMovementMethod.getInstance());
-                fragmentAbstractDisplayBinding.txtAbstractTitle.setText(homeResponse.getAbstract_details().get(0).getTitle());
-                fragmentAbstractDisplayBinding.txtAuthor.setText(homeResponse.getAbstract_details().get(0).getAuthor_names());
-                fragmentAbstractDisplayBinding.txtPublishedDate.setText(homeResponse.getAbstract_details().get(0).getPub_date());
-                fragmentAbstractDisplayBinding.txtReceivedDate.setText(homeResponse.getAbstract_details().get(0).getRec_date());
+                fragmentAbstractDisplayBinding.txtAbstractTitle.setText(homeResponse.getAbstractDetails().get(0).getTitle());
+                fragmentAbstractDisplayBinding.txtAuthor.setText(homeResponse.getAbstractDetails().get(0).getAuthorNames());
+                fragmentAbstractDisplayBinding.txtPublishedDate.setText(homeResponse.getAbstractDetails().get(0).getPubDate());
+                fragmentAbstractDisplayBinding.txtReceivedDate.setText(homeResponse.getAbstractDetails().get(0).getRecDate());
                 fragmentAbstractDisplayBinding.txtEmptyView.setVisibility(View.GONE);
                 fragmentAbstractDisplayBinding.parentLayout.setVisibility(View.VISIBLE);
 

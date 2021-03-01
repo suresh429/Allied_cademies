@@ -35,7 +35,7 @@ public class ArchiveChildAdapter extends RecyclerView.Adapter<ArchiveChildAdapte
     @Override
     public void onBindViewHolder(@NonNull ArchiveChildAdapter.ViewHolder holder, int position) {
 
-        holder.rowItemBinding.txtArchiveChildName.setText(modelList.get(position).getVol_issue_name());
+        holder.rowItemBinding.txtArchiveChildName.setText(modelList.get(position).getVolIssueName());
 
         holder.rowItemBinding.getRoot().setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,7 +46,7 @@ public class ArchiveChildAdapter extends RecyclerView.Adapter<ArchiveChildAdapte
                 bundle.putString("volume",modelList.get(position).getVol());
                 bundle.putString("issue",modelList.get(position).getIssue());
                 bundle.putString("journalcode",modelList.get(position).getJournal());
-                bundle.putString("ActionBarTitle",modelList.get(position).getVol_issue_name());
+                bundle.putString("ActionBarTitle",modelList.get(position).getVolIssueName());
                 Navigation.findNavController(v).navigate(R.id.volumeIssueFragment,bundle);
             }
         });

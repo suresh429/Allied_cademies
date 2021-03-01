@@ -1,19 +1,18 @@
 package com.journals.alliedacademies.model;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.List;
 
 public class CategoryResponse {
 
 
-    /**
-     * status : true
-     * subcat_cnt : 14
-     * subcat_details : [{"managejournal":"Accounting & Marketing","journal":"Accounting & Marketing","journalcode":"jamk","rel_keyword":"open-access","journal_logo":"Journal-of-Accounting-&-Marketing-logo.png","home_url":"https://www.hilarispublisher.com/accounting-marketing.html","archive_url":"https://www.hilarispublisher.com/accounting-marketing/archive.html","ci_url":"https://www.hilarispublisher.com/accounting-marketing/current-issue.html","inst_url":"https://www.hilarispublisher.com/accounting-marketing/instructionsforauthors.html","flyerimg":"https://www.hilarispublisher.com/admin/flyers/Journal-of-Accounting--Marketing-flyer.jpg","track_paper":"https://www.scholarscentral.org/submissions/accounting-marketing.html","vol_issue_name":"Volume 9, Issue 2"},{"managejournal":"Accounting & Marketing","journal":"Accounting & Marketing","journalcode":"jamk","rel_keyword":"open-access","journal_logo":"Journal-of-Accounting-&-Marketing-logo.png","home_url":"https://www.hilarispublisher.com/accounting-marketing.html","archive_url":"https://www.hilarispublisher.com/accounting-marketing/archive.html","ci_url":"https://www.hilarispublisher.com/accounting-marketing/current-issue.html","inst_url":"https://www.hilarispublisher.com/accounting-marketing/instructionsforauthors.html","flyerimg":"https://www.hilarispublisher.com/admin/flyers/Journal-of-Accounting--Marketing-flyer.jpg","track_paper":"https://www.scholarscentral.org/submissions/accounting-marketing.html","vol_issue_name":"Volume 9, Issue 2"},{"managejournal":"Arabian Journal of Business and Management Review","journal":"Arabian Journal of Business and Management Review","journalcode":"jbmr","rel_keyword":"open-access","journal_logo":"Arabian-Journal-of-Business-and-Management-Review-logo.png","home_url":"https://www.hilarispublisher.com/arabian-journal-business-management-review.html","archive_url":"https://www.hilarispublisher.com/arabian-journal-business-management-review/archive.html","ci_url":"https://www.hilarispublisher.com/arabian-journal-business-management-review/current-issue.html","inst_url":"https://www.hilarispublisher.com/arabian-journal-business-management-review/instructionsforauthors.html","flyerimg":"https://www.hilarispublisher.com/admin/flyers/Arabian-Journal-of-Business-and-Management-Review-flyer.jpg","track_paper":"https://www.scholarscentral.org/submissions/arabian-business-management-review.html","vol_issue_name":"Volume 10, Issue 4"},{"managejournal":"Arabian Journal of Business and Management Review","journal":"Arabian Journal of Business and Management Review","journalcode":"jbmr","rel_keyword":"open-access","journal_logo":"Arabian-Journal-of-Business-and-Management-Review-logo.png","home_url":"https://www.hilarispublisher.com/arabian-journal-business-management-review.html","archive_url":"https://www.hilarispublisher.com/arabian-journal-business-management-review/archive.html","ci_url":"https://www.hilarispublisher.com/arabian-journal-business-management-review/current-issue.html","inst_url":"https://www.hilarispublisher.com/arabian-journal-business-management-review/instructionsforauthors.html","flyerimg":"https://www.hilarispublisher.com/admin/flyers/Arabian-Journal-of-Business-and-Management-Review-flyer.jpg","track_paper":"https://www.scholarscentral.org/submissions/arabian-business-management-review.html","vol_issue_name":"Volume 10, Issue 4"},{"managejournal":"Business and Economics Journal","journal":"Business and Economics Journal","journalcode":"bej","rel_keyword":"open-access","journal_logo":"Business-and-Economics-Journal-logo.png","home_url":"https://www.hilarispublisher.com/business-and-economics-journal.html","archive_url":"https://www.hilarispublisher.com/business-and-economics-journal/archive.html","ci_url":"https://www.hilarispublisher.com/business-and-economics-journal/current-issue.html","inst_url":"https://www.hilarispublisher.com/business-and-economics-journal/instructionsforauthors.html","flyerimg":"https://www.hilarispublisher.com/admin/flyers/business-and-economics-journal-flyer.jpg","track_paper":"https://www.scholarscentral.org/submissions/business-economics-journal.html","vol_issue_name":"Volume 11, Issue 3"},{"managejournal":"Business and Economics Journal","journal":"Business and Economics Journal","journalcode":"bej","rel_keyword":"open-access","journal_logo":"Business-and-Economics-Journal-logo.png","home_url":"https://www.hilarispublisher.com/business-and-economics-journal.html","archive_url":"https://www.hilarispublisher.com/business-and-economics-journal/archive.html","ci_url":"https://www.hilarispublisher.com/business-and-economics-journal/current-issue.html","inst_url":"https://www.hilarispublisher.com/business-and-economics-journal/instructionsforauthors.html","flyerimg":"https://www.hilarispublisher.com/admin/flyers/business-and-economics-journal-flyer.jpg","track_paper":"https://www.scholarscentral.org/submissions/business-economics-journal.html","vol_issue_name":"Volume 11, Issue 3"},{"managejournal":"Entrepreneurship & Organization Management","journal":"Entrepreneurship & Organization Management","journalcode":"jeom","rel_keyword":"open-access","journal_logo":"Journal-of-Entrepreneurship-&-Organization-Management-logo.png","home_url":"https://www.hilarispublisher.com/entrepreneurship-organization-management.html","archive_url":"https://www.hilarispublisher.com/entrepreneurship-organization-management/archive.html","ci_url":"https://www.hilarispublisher.com/entrepreneurship-organization-management/current-issue.html","inst_url":"https://www.hilarispublisher.com/entrepreneurship-organization-management/instructionsforauthors.html","flyerimg":"https://www.hilarispublisher.com/admin/flyers/Journal-of-Entrepreneurship--Organization-Management-flyer.jpg","track_paper":"https://www.scholarscentral.org/submissions/entrepreneurship-organization-management.html","vol_issue_name":"Volume 9, Issue 3"},{"managejournal":"Entrepreneurship & Organization Management","journal":"Entrepreneurship & Organization Management","journalcode":"jeom","rel_keyword":"open-access","journal_logo":"Journal-of-Entrepreneurship-&-Organization-Management-logo.png","home_url":"https://www.hilarispublisher.com/entrepreneurship-organization-management.html","archive_url":"https://www.hilarispublisher.com/entrepreneurship-organization-management/archive.html","ci_url":"https://www.hilarispublisher.com/entrepreneurship-organization-management/current-issue.html","inst_url":"https://www.hilarispublisher.com/entrepreneurship-organization-management/instructionsforauthors.html","flyerimg":"https://www.hilarispublisher.com/admin/flyers/Journal-of-Entrepreneurship--Organization-Management-flyer.jpg","track_paper":"https://www.scholarscentral.org/submissions/entrepreneurship-organization-management.html","vol_issue_name":"Volume 9, Issue 3"},{"managejournal":"International Journal of Economics & Management Sciences","journal":"International Journal of Economics & Management Sciences","journalcode":"ijems","rel_keyword":"open-access","journal_logo":"International-Journal-of-Economics-&-Management-Sciences-logo.png","home_url":"https://www.hilarispublisher.com/economics-and-management-sciences.html","archive_url":"https://www.hilarispublisher.com/economics-and-management-sciences/archive.html","ci_url":"https://www.hilarispublisher.com/economics-and-management-sciences/current-issue.html","inst_url":"https://www.hilarispublisher.com/economics-and-management-sciences/instructionsforauthors.html","flyerimg":"https://www.hilarispublisher.com/admin/flyers/International-Journal-of-Economics--Management-Sciences-flyer.jpg","track_paper":"https://www.scholarscentral.org/submissions/international-economics-management-sciences.html","vol_issue_name":"Volume 9, Issue 3"},{"managejournal":"International Journal of Economics & Management Sciences","journal":"International Journal of Economics & Management Sciences","journalcode":"ijems","rel_keyword":"open-access","journal_logo":"International-Journal-of-Economics-&-Management-Sciences-logo.png","home_url":"https://www.hilarispublisher.com/economics-and-management-sciences.html","archive_url":"https://www.hilarispublisher.com/economics-and-management-sciences/archive.html","ci_url":"https://www.hilarispublisher.com/economics-and-management-sciences/current-issue.html","inst_url":"https://www.hilarispublisher.com/economics-and-management-sciences/instructionsforauthors.html","flyerimg":"https://www.hilarispublisher.com/admin/flyers/International-Journal-of-Economics--Management-Sciences-flyer.jpg","track_paper":"https://www.scholarscentral.org/submissions/international-economics-management-sciences.html","vol_issue_name":"Volume 9, Issue 3"},{"managejournal":"Journal of Business & Financial Affairs","journal":"Journal of Business & Financial Affairs","journalcode":"jbfa","rel_keyword":"open-access","journal_logo":"Journal-of-Business-&-Financial-Affairs-logo.png","home_url":"https://www.hilarispublisher.com/business-and-financial-affairs.html","archive_url":"https://www.hilarispublisher.com/business-and-financial-affairs/archive.html","ci_url":"https://www.hilarispublisher.com/business-and-financial-affairs/current-issue.html","inst_url":"https://www.hilarispublisher.com/business-and-financial-affairs/instructionsforauthors.html","flyerimg":"https://www.hilarispublisher.com/admin/flyers/Journal-of-Business--Financial-Affairs-flyer.jpg","track_paper":"https://www.scholarscentral.org/submissions/business-financial-affairs.html","vol_issue_name":"Volume 9, Issue 3"},{"managejournal":"Journal of Business & Financial Affairs","journal":"Journal of Business & Financial Affairs","journalcode":"jbfa","rel_keyword":"open-access","journal_logo":"Journal-of-Business-&-Financial-Affairs-logo.png","home_url":"https://www.hilarispublisher.com/business-and-financial-affairs.html","archive_url":"https://www.hilarispublisher.com/business-and-financial-affairs/archive.html","ci_url":"https://www.hilarispublisher.com/business-and-financial-affairs/current-issue.html","inst_url":"https://www.hilarispublisher.com/business-and-financial-affairs/instructionsforauthors.html","flyerimg":"https://www.hilarispublisher.com/admin/flyers/Journal-of-Business--Financial-Affairs-flyer.jpg","track_paper":"https://www.scholarscentral.org/submissions/business-financial-affairs.html","vol_issue_name":"Volume 9, Issue 3"},{"managejournal":"Journal of Global Economics","journal":"Journal of Global Economics","journalcode":"economics","rel_keyword":"open-access","journal_logo":"Journal-of-Global-Economics--logo.png","home_url":"https://www.hilarispublisher.com/global-economics.html","archive_url":"https://www.hilarispublisher.com/global-economics/archive.html","ci_url":"https://www.hilarispublisher.com/global-economics/current-issue.html","inst_url":"https://www.hilarispublisher.com/global-economics/instructionsforauthors.html","flyerimg":"https://www.hilarispublisher.com/admin/flyers/global-economics-flyer.jpg","track_paper":"https://www.scholarscentral.org/submissions/global-economics.html","vol_issue_name":"Volume 8, Issue 3"},{"managejournal":"Journal of Global Economics","journal":"Journal of Global Economics","journalcode":"economics","rel_keyword":"open-access","journal_logo":"Journal-of-Global-Economics--logo.png","home_url":"https://www.hilarispublisher.com/global-economics.html","archive_url":"https://www.hilarispublisher.com/global-economics/archive.html","ci_url":"https://www.hilarispublisher.com/global-economics/current-issue.html","inst_url":"https://www.hilarispublisher.com/global-economics/instructionsforauthors.html","flyerimg":"https://www.hilarispublisher.com/admin/flyers/global-economics-flyer.jpg","track_paper":"https://www.scholarscentral.org/submissions/global-economics.html","vol_issue_name":"Volume 8, Issue 3"}]
-     */
-
+    @SerializedName("status")
     private boolean status;
-    private int subcat_cnt;
-    private List<SubcatDetailsBean> subcat_details;
+    @SerializedName("subcat_cnt")
+    private int subcatCnt;
+    @SerializedName("subcat_details")
+    private List<SubcatDetailsBean> subcatDetails;
 
     public boolean isStatus() {
         return status;
@@ -23,50 +22,47 @@ public class CategoryResponse {
         this.status = status;
     }
 
-    public int getSubcat_cnt() {
-        return subcat_cnt;
+    public int getSubcatCnt() {
+        return subcatCnt;
     }
 
-    public void setSubcat_cnt(int subcat_cnt) {
-        this.subcat_cnt = subcat_cnt;
+    public void setSubcatCnt(int subcatCnt) {
+        this.subcatCnt = subcatCnt;
     }
 
-    public List<SubcatDetailsBean> getSubcat_details() {
-        return subcat_details;
+    public List<SubcatDetailsBean> getSubcatDetails() {
+        return subcatDetails;
     }
 
-    public void setSubcat_details(List<SubcatDetailsBean> subcat_details) {
-        this.subcat_details = subcat_details;
+    public void setSubcatDetails(List<SubcatDetailsBean> subcatDetails) {
+        this.subcatDetails = subcatDetails;
     }
 
     public static class SubcatDetailsBean {
-        /**
-         * managejournal : Accounting & Marketing
-         * journal : Accounting & Marketing
-         * journalcode : jamk
-         * rel_keyword : open-access
-         * journal_logo : Journal-of-Accounting-&-Marketing-logo.png
-         * home_url : https://www.hilarispublisher.com/accounting-marketing.html
-         * archive_url : https://www.hilarispublisher.com/accounting-marketing/archive.html
-         * ci_url : https://www.hilarispublisher.com/accounting-marketing/current-issue.html
-         * inst_url : https://www.hilarispublisher.com/accounting-marketing/instructionsforauthors.html
-         * flyerimg : https://www.hilarispublisher.com/admin/flyers/Journal-of-Accounting--Marketing-flyer.jpg
-         * track_paper : https://www.scholarscentral.org/submissions/accounting-marketing.html
-         * vol_issue_name : Volume 9, Issue 2
-         */
-
+        @SerializedName("managejournal")
         private String managejournal;
+        @SerializedName("journal")
         private String journal;
+        @SerializedName("journalcode")
         private String journalcode;
-        private String rel_keyword;
-        private String journal_logo;
-        private String home_url;
-        private String archive_url;
-        private String ci_url;
-        private String inst_url;
+        @SerializedName("rel_keyword")
+        private String relKeyword;
+        @SerializedName("journal_logo")
+        private String journalLogo;
+        @SerializedName("home_url")
+        private String homeUrl;
+        @SerializedName("archive_url")
+        private String archiveUrl;
+        @SerializedName("ci_url")
+        private String ciUrl;
+        @SerializedName("inst_url")
+        private String instUrl;
+        @SerializedName("flyerimg")
         private String flyerimg;
-        private String track_paper;
-        private String vol_issue_name;
+        @SerializedName("track_paper")
+        private String trackPaper;
+        @SerializedName("vol_issue_name")
+        private String volIssueName;
 
         public String getManagejournal() {
             return managejournal;
@@ -92,52 +88,52 @@ public class CategoryResponse {
             this.journalcode = journalcode;
         }
 
-        public String getRel_keyword() {
-            return rel_keyword;
+        public String getRelKeyword() {
+            return relKeyword;
         }
 
-        public void setRel_keyword(String rel_keyword) {
-            this.rel_keyword = rel_keyword;
+        public void setRelKeyword(String relKeyword) {
+            this.relKeyword = relKeyword;
         }
 
-        public String getJournal_logo() {
-            return journal_logo;
+        public String getJournalLogo() {
+            return journalLogo;
         }
 
-        public void setJournal_logo(String journal_logo) {
-            this.journal_logo = journal_logo;
+        public void setJournalLogo(String journalLogo) {
+            this.journalLogo = journalLogo;
         }
 
-        public String getHome_url() {
-            return home_url;
+        public String getHomeUrl() {
+            return homeUrl;
         }
 
-        public void setHome_url(String home_url) {
-            this.home_url = home_url;
+        public void setHomeUrl(String homeUrl) {
+            this.homeUrl = homeUrl;
         }
 
-        public String getArchive_url() {
-            return archive_url;
+        public String getArchiveUrl() {
+            return archiveUrl;
         }
 
-        public void setArchive_url(String archive_url) {
-            this.archive_url = archive_url;
+        public void setArchiveUrl(String archiveUrl) {
+            this.archiveUrl = archiveUrl;
         }
 
-        public String getCi_url() {
-            return ci_url;
+        public String getCiUrl() {
+            return ciUrl;
         }
 
-        public void setCi_url(String ci_url) {
-            this.ci_url = ci_url;
+        public void setCiUrl(String ciUrl) {
+            this.ciUrl = ciUrl;
         }
 
-        public String getInst_url() {
-            return inst_url;
+        public String getInstUrl() {
+            return instUrl;
         }
 
-        public void setInst_url(String inst_url) {
-            this.inst_url = inst_url;
+        public void setInstUrl(String instUrl) {
+            this.instUrl = instUrl;
         }
 
         public String getFlyerimg() {
@@ -148,20 +144,20 @@ public class CategoryResponse {
             this.flyerimg = flyerimg;
         }
 
-        public String getTrack_paper() {
-            return track_paper;
+        public String getTrackPaper() {
+            return trackPaper;
         }
 
-        public void setTrack_paper(String track_paper) {
-            this.track_paper = track_paper;
+        public void setTrackPaper(String trackPaper) {
+            this.trackPaper = trackPaper;
         }
 
-        public String getVol_issue_name() {
-            return vol_issue_name;
+        public String getVolIssueName() {
+            return volIssueName;
         }
 
-        public void setVol_issue_name(String vol_issue_name) {
-            this.vol_issue_name = vol_issue_name;
+        public void setVolIssueName(String volIssueName) {
+            this.volIssueName = volIssueName;
         }
     }
 }

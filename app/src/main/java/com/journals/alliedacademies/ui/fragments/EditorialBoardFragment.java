@@ -2,6 +2,7 @@ package com.journals.alliedacademies.ui.fragments;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,6 +29,7 @@ public class EditorialBoardFragment extends Fragment {
 
 
     ArrayList<EditorialBoardResponse.EditorialboardarrBean> editorialboardarrBeanArrayList = new ArrayList<>();
+    ArrayList<EditorialBoardResponse.EditorialboardarrBean.EditorsBean> editorsBeanArrayList = new ArrayList<>();
     EditorialViewModel editorialViewModel;
     FragmentEditorialBoardBinding fragmentEditorialBoardBinding;
     EditorialBoardAdapter editorialBoardAdapter;
@@ -86,7 +88,10 @@ public class EditorialBoardFragment extends Fragment {
 
             editorialboardarrBeanArrayList.addAll(catDetailsBeanList);
 
-            editorialBoardAdapter = new EditorialBoardAdapter(catDetailsBeanList, getActivity());
+            for (EditorialBoardResponse.EditorialboardarrBean c : catDetailsBeanList){
+                editorsBeanArrayList.addAll(c.getEditors());
+            }
+            editorialBoardAdapter = new EditorialBoardAdapter(editorsBeanArrayList, getActivity());
             fragmentEditorialBoardBinding.recyclerScientificJournals.setAdapter(editorialBoardAdapter);
 
 

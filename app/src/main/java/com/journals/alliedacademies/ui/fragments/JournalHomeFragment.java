@@ -86,7 +86,7 @@ public class JournalHomeFragment extends Fragment {
            // List<JournalHomeResponse> catDetailsBeanList = homeResponse.getAbt_journal_details();
 
             if (homeResponse.isStatus()){
-                fragmentJournalHomeBinding.txtJournalHome.setText(Html.fromHtml(homeResponse.getAbt_journal_details()));
+                fragmentJournalHomeBinding.txtJournalHome.setText(Html.fromHtml(homeResponse.getAbtJournalDetails()));
                 fragmentJournalHomeBinding.txtJournalHome.setMovementMethod(LinkMovementMethod.getInstance());
                 fragmentJournalHomeBinding.txtEmptyView.setVisibility(View.GONE);
 
